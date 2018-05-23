@@ -1,0 +1,19 @@
+{
+  "name": "blockexplorer",
+  "version": "1.0.0",
+  "description": "EOS Block Explorer",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hgcam/eos_block_explorer.git"
+  },
+  "author": "Hugo Campanella",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hgcam/eos_block_explorer/issues"
+  },
+  "homepage": "https://github.com/Hgcam/eos_block_explorer#readme"
+}
