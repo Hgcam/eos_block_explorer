@@ -1,6 +1,7 @@
 var     express                 = require("express"),
         bodyParser              = require("body-parser"),
         session                 = require("express-session"),
+        jquery                  = require("jquery"),
         app                     = express();
 
 // app.js setup     
