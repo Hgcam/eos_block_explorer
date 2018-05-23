@@ -1,9 +1,115 @@
 <% include partials/header %>
+<!--Equal Width Containder-->
 
-<div class="ui raised very padded text container segment">
-  <h2 class="ui header">Dogs Roles with Humans</h2>
-  <p></p>
-  <p></p>
+<div class="ui raised very padded container segment">   
+<!--Block Table-->
+    <h2>Latest Blocks</h2>
+<table class="ui selectable celled table">
+<!--Table Header Line-->
+<thead>
+    <tr>
+        <th>Tx ID</th>
+        <th>Status</th>
+        <th>Validation Time</th>      
+        <th>Transactions</th>
+        <th>Total Ammount</th>
+        <th>BP Name</th>
+        <th>Size (kB)</th>
+    </tr>
+</thead>
+<!--Table content lines-->
+<tbody>
+    <tr>
+        <td>0X14C7008EFCF...</td>
+        <td class="warning">Pending</td>
+        <td>-</td>      
+        <td>153</td>
+        <td>1039.39 EOS</td>
+        <td>EOS Cafe</td>
+        <td>11.88</td>
+    </tr>
+
+    <tr>
+        <td>0X14C7008EFCF...</td>
+        <td class="positive">Validated</td>
+        <td>0.3 secs</td>      
+        <td>198</td>
+        <td>1039.39 EOS</td>
+        <td>HKEOS</td>
+        <td>12.48</td>
+    </tr>
+    
+    <tr>
+        <td>0X14C7008EFCF...</td>
+        <td class="positive">Validated</td>
+        <td>0.5 secs</td>      
+        <td>784</td>
+        <td>1039.39 EOS</td>
+        <td>EOS Cafe</td>
+        <td>54.98</td>
+    </tr>
+    
+    <tr>
+        <td>0X14C7008EFCF...</td>
+        <td class="positive">Validated</td>
+        <td>0.1secs</td>      
+        <td>587</td>
+        <td>10348.495 EOS</td>
+        <td>HKEOS</td>
+        <td>78.09</td>
+    </tr>
+    
+    <tr>
+        <td>0X14C7008EFCF...</td>
+        <td class="negative">Skipped</td>
+        <td>-</td>      
+        <td>3475</td>
+        <td>5764.54 EOS</td>
+        <td>EOS Cafe</td>
+        <td>39.76</td>
+    </tr>
+    
+    
+<!--End of table content Lines-->
+  </tbody>
+<!--End of table-->
+</table>
+
+   <!--First line-->
+    <div class="ui two column doubling stackable grid container">
+        <div class="row">
+            <div class="column">
+                <h3 class="ui top attached header">
+                  Marketcap
+                </h3>
+                <div class="ui attached segment">
+                  <p>Current Marketcap</p>
+                </div>
+                <h3 class="ui attached header">
+                  Price
+                </h3>
+                <div class="ui attached segment">
+                  <p>Current Price</p>
+                </div>
+                <h3 class="ui bottom attached header">
+                </h3> 
+            </div>
+            <div class="column">
+                <div class="ui segment">Transaction History</div>
+            </div>
+        </div>
+        <!--Second line-->
+        <div class="row">
+            <div class="column">
+                <div class="ui segment">Blocks</div>
+            </div>
+            <div class="column">
+                <div class="ui segment">Transactions</div>
+            </div>
+        </div>
+    <!--End of Grid container-->
+    </div>
+<!--End of Equal Width container-->
 </div>
 
 <% include partials/footer %>
