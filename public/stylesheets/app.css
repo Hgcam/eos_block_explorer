@@ -1,13 +1,26 @@
-#market-info {
+#left-info {
     padding-left: 0;
+    padding-top: 25px;
 }
 
-#transactions-info {
+#right-info {
     padding-right: 0;
+    padding-top: 25px;
+}
+
+.main-div {
+    top:50px;
 }
 
 .tx-box {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+}
+
+td {
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }

@@ -5,16 +5,18 @@
   <meta charset="utf-8">
 
   <title>EOS Block Explorer</title>
-  <meta name="EOS Block Explore" content="Cryptocurrency transactions and accounts explorer">
+  <meta name="EOS Block Explorer" content="Cryptocurrency transactions and accounts explorer">
   <meta name="Hugo Campanellla" content="HKEOS">
 
   <!--Semantic UI Setup-->
   <link rel="stylesheet" type="text/css" href="/stylesheets/semantic.min.css">
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/icon.min.css'>
+  
     <script
       src="https://code.jquery.com/jquery-3.1.1.min.js"
       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
       crossorigin="anonymous"></script>
-    <script src="semantic/dist/semantic.min.js"></script>
+    <script src="/stylesheets/semantic.min.js"></script>
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -23,26 +25,20 @@
 </head>
 
 <!--Nav Bar-->
-<div class="ui attached stackable menu">
+<div class="ui fixed stackable menu">
   <div class="ui container">
-    <a class="item">
-      <i class="home icon"></i> Home
+    <span class="item" href="/">
+      <i class="circle icon"></i>Logo
+    </span>
+    <a class="item" href="/">
+      <i class="home icon"></i>Home
     </a>
-    <a class="item">
-      <i class="grid layout icon"></i> Transactions
+    <a class="item" href="/blocks">
+      <i class="cubes icon"></i>Blocks
     </a>
-    <a class="item">
-      <i class="mail icon"></i> Actions
+    <a class="item" href="/transactions">
+      <i class="tag icon"></i>Transactions
     </a>
-    <div class="ui simple dropdown item">
-      More
-      <i class="dropdown icon"></i>
-      <div class="menu">
-        <a class="item"><i class="edit icon"></i> Edit Profile</a>
-        <a class="item"><i class="globe icon"></i> Choose Language</a>
-        <a class="item"><i class="settings icon"></i> Account Settings</a>
-      </div>
-    </div>
     <div class="right item">
       <div class="ui input"><input type="text" placeholder="Search..."></div>
     </div>

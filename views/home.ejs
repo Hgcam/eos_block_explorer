@@ -1,10 +1,10 @@
 <% include partials/header %>
 
 <!--Equal Width Containder-->
-<div class="ui raised very padded container segment">   
+<div class="ui raised very padded container segment main-div">   
 <!--Block Table-->
     <h2>Latest Blocks</h2>
-<table class="ui selectable celled table">
+<table class="ui stackable celled table">
 <!--Table Header Line-->
 <thead>
     <tr>
@@ -21,7 +21,7 @@
 <tbody>
 <!--Display 4 lastest transactions in Table-->
     <tr>
-        <td >0X14C7008EFCF...</td>
+        <td><a href="">0x35774bca3f245307b249a6ed0f199f003589d1c7dd5e4429d3ec4c98cee153d5</a></td>
         <td class="warning">Pending</td>
         <td>-</td>      
         <td>153</td>
@@ -31,7 +31,7 @@
     </tr>
 
     <tr>
-        <td>0X14C7008EFCF...</td>
+        <td><a href="">0x35774bca3f245307b249a6ed0f199f003589d1c7dd5e4429d3ec4c98cee153d5</a></td>
         <td class="positive">Validated</td>
         <td>0.3 secs</td>      
         <td>198</td>
@@ -41,7 +41,7 @@
     </tr>
     
     <tr>
-        <td>0X14C7008EFCF...</td>
+        <td><a href="">0x35774bca3f245307b249a6ed0f199f003589d1c7dd5e4429d3ec4c98cee153d5</a></td>
         <td class="positive">Validated</td>
         <td>0.5 secs</td>      
         <td>784</td>
@@ -51,7 +51,7 @@
     </tr>
     
     <tr>
-        <td>0X14C7008EFCF...</td>
+        <td><a href="">0x35774bca3f245307b249a6ed0f199f003589d1c7dd5e4429d3ec4c98cee153d5</a></td>
         <td class="positive">Validated</td>
         <td>0.1secs</td>      
         <td>587</td>
@@ -61,7 +61,8 @@
     </tr>
     
     <tr>
-        <td>0X14C7008EFCF...</td>
+        
+        <td><a href="">0x35774bca3f245307b249a6ed0f199f003589d1c7dd5e4429d3ec4c98cee153d5</a></td>
         <td class="negative">Skipped</td>
         <td>-</td>      
         <td>3475</td>
@@ -77,40 +78,110 @@
 <!--First line-->
     <div class="ui two column doubling stackable grid container">
         <div class="row">
-            <div class="column" id="market-info">
+            <!--<div class="column" id="left-info">-->
+            <!--    <h3 class="ui top attached header">-->
+            <!--      Marketcap-->
+            <!--    </h3>-->
+            <!--    <div class="ui attached segment">-->
+            <!--      <p>$9,925,004,340</p>-->
+            <!--    </div>-->
+            <!--    <h3 class="ui attached header">-->
+            <!--      Price-->
+            <!--    </h3>-->
+            <!--    <div class="ui bottom attached segment">-->
+            <!--      <p>11.34$</p>-->
+            <!--    </div>-->
+            <!--</div>-->
+            <div class="column" id="left-info">
+                <div class="ui segment">
+                    <h3>Are you new to EOS?</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consequat ante vitae justo elementum, et congue eros ultrices.</p>
+                    <button class="ui right labeled icon button">
+                        <i class="right arrow icon"></i>
+                        Buy EOS
+                    </button>
+                    <button class="ui right labeled icon button">
+                        <i class="right arrow icon"></i>
+                        Learn More
+                    </button>
+                
+                </div>
+            </div>
+            <div class="column" id="right-info">
+                <div class="ui grey inverted segment">
+                    <h3>Search</h3>
+                    <p>You may enter a block height, address, block hash, transaction hash, hash160, or ipv4 address...</p>
+                    <div class="ui action input">
+                        <input type="text" placeholder="Search...">
+                        <button class="ui inverted blue button">Search</button>
+                    </div>
+                </div>
+            </div>
+       
+            <div class="column" id="left-info">
                 <h3 class="ui top attached header">
                   Marketcap
                 </h3>
-                <div class="ui attached segment">
-                  <p>$9,925,004,340</p>
-                </div>
-                <h3 class="ui attached header">
-                  Price
-                </h3>
                 <div class="ui bottom attached segment">
-                  <p>11.34$</p>
-                </div>
-            </div>
-            
-            <div class="column" id="transactions-info">
-                <h3 class="ui top attached header">
-                  Transactions History
-                </h3>
-                <div class="ui bottom attached segment">
-                  <p>11.34$</p>
+                    <div class="ui small horizontal statistic">
+                        <div class="value">
+                        9,925,004,340
+                        </div>
+                        <div class="label">
+                        $
+                        </div>
+                    </div>
                 </div>
             </div>
 
-        </div>
-        <!--Second line-->
-        <div class="row">
-            <div class="column">
-                <div class="ui segment">Blocks</div>
+            <div class="column" id="right-info">
+                <h3 class="ui top attached header">
+                  Current Price
+                </h3>
+                <div class="ui bottom attached segment">
+                    <div class="ui small horizontal statistic">
+                        <div class="value">
+                        11.34
+                        </div>
+                        <div class="label">
+                        $
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="column">
-                <div class="ui segment">Transactions</div>
+
+            <div class="column" id="left-info">
+                <h3 class="ui top attached header">
+                  Hash Rate
+                </h3>
+                <div class="ui bottom attached segment">
+                    <div class="ui small horizontal statistic">
+                        <div class="value">
+                        268,418.61 
+                        </div>
+                        <div class="label">
+                        GH/s
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+
+            <div class="column" id="right-info">
+                <h3 class="ui top attached header">
+                  Transactions Per Day
+                </h3>
+                <div class="ui bottom attached segment">
+                    <div class="ui small horizontal statistic">
+                        <div class="value">
+                        234,555,550
+                        </div>
+                        <div class="label">
+                        EOS Transactions
+                        </div>
+                    </div>
+                </div>
+            </div>
+
     <!--End of Grid container-->
     </div>
 <!--End of Equal Width container-->
