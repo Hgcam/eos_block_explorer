@@ -1,0 +1,13 @@
+#market-info {
+    padding-left: 0;
+}
+
+#transactions-info {
+    padding-right: 0;
+}
+
+.tx-box {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}

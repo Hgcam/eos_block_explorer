@@ -1,0 +1,87 @@
+<% include partials/header %>
+
+<div class="ui raised very padded container segment">   
+
+<h2>EOS Transaction information</h2>
+<!--First row transaction information-->
+    <div class="ui three column doubling stackable grid container">
+        <div class="row">
+            <div class="column" id="market-info">
+                <h3 class="ui top attached header">
+                  Sender
+                </h3>
+                <div class="ui bottom attached segment">
+                  <p class="tx-box">0x0019ce305c282fd1e7d09779827684a6c3ed50af</p>
+                </div>
+                
+            </div>
+            
+            <div class="column">
+                <h3 class="ui top attached header">
+                  Receiver
+                </h3>
+                <div class="ui bottom attached segment" >
+                  <p class="tx-box">0x0019ce305c282fd1e7d09779827684a6c3ed50af</p>
+                </div>
+            </div>
+
+            <div class="column" id="transactions-info">
+                <h3 class="ui top attached header">
+                  Value
+                </h3>
+                <div class="ui bottom attached segment">
+                  <p>234 EOS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Second row, transaction information table-->
+    <table class="ui celled striped table">
+  <thead>
+    <tr><th colspan="3" class="six wide">
+      Additional info
+    </th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td class="collapsing">
+        <i class="folder icon"></i> Transaction Hash:
+      </td>
+      <td>0x35774bca3f245307b249a6ed0f199f003589d1c7dd5e4429d3ec4c98cee153d5</td>
+      
+    </tr>
+    <tr>
+      <td>
+        <i class="folder icon"></i> Transaction Status:
+      </td>
+      <td class="positive">Success</td>
+      
+    </tr>
+    <tr>
+      <td>
+        <i class="folder icon"></i> Block Height:
+      </td>
+      <td>5661749 (5840 block confirmations)</td>
+      
+    </tr>
+    <tr>
+      <td>
+        <i class="file outline icon"></i> Received Time:
+      </td>
+      <td>1 day 45 mins ago (May-23-2018 06:56:24 AM +UTC)</td>
+      
+    </tr>
+    <tr>
+      <td>
+        <i class="file outline icon"></i> Block Producer:
+      </td>
+      <td>EOS Cafe</td>
+      
+    </tr>
+  </tbody>
+</table>
+    
+
+</div>
+<% include partials/footer %>

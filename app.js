@@ -11,14 +11,26 @@ app.set("view engine", "ejs");
 
 // Render Home (blocks) page
 app.get("/", function(req, res){
-    res.render("blocks");
+    res.render("home");
     console.log("Homepage works");
+});
+
+// Render Home (blocks) page
+app.get("/blocks", function(req, res){
+    res.render("blocks");
+    console.log("Blocks Produced Page works");
 });
 
 // Render Transactions Page
 app.get("/transactions", function(req, res){
     res.render("transactions");
     console.log("Transactions page works");
+});
+
+// Render one specific transaction information Page
+app.get("/transaction-id", function(req, res){
+    res.render("transaction-id");
+    console.log("Transaction-id page works");
 });
 
 // Render Actions Page
