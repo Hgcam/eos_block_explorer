@@ -8,8 +8,17 @@
     padding-top: 25px;
 }
 
+#middle-info {
+    padding-top: 25px;
+}
+
+#info {
+    padding-right: 10px;
+    padding-left: 0;
+    padding-top: 25px;
+}
 .main-div {
-    top:50px;
+    /*top:50px;*/
 }
 
 .tx-box {
@@ -19,8 +28,20 @@
 }
 
 td {
-    max-width: 100px;
+    max-width: 120px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+#ribbon {
+    overflow: visible;
+}
+
+#hash {
+    color: #016936;
+}
+
+#positive-content {
+    color: #016936;
 }

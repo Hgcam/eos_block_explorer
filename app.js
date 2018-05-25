@@ -9,13 +9,13 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 
-// Render Home (blocks) page
+// Render Home page
 app.get("/", function(req, res){
     res.render("home");
     console.log("Homepage works");
 });
 
-// Render Home (blocks) page
+// Render blocks page
 app.get("/blocks", function(req, res){
     res.render("blocks");
     console.log("Blocks Produced Page works");
@@ -31,6 +31,12 @@ app.get("/transactions", function(req, res){
 app.get("/transaction-id", function(req, res){
     res.render("transaction-id");
     console.log("Transaction-id page works");
+});
+
+// Render one specific block information Page
+app.get("/block-id", function(req, res){
+    res.render("block-id");
+    console.log("Block-id page works");
 });
 
 // Render Actions Page

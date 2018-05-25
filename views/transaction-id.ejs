@@ -1,12 +1,13 @@
 <% include partials/header %>
 
-<div class="ui raised very padded container segment main-div">   
+<div class="ui raised padded container segment main-div">   
 
 <h2>EOS Transaction information</h2>
+<div class="tx-box"><small>Transaction Hash: <span id="hash">0x03fd80a084fe02f98716993609a8222fe19b8542826eaf87208e20c2a84b3790</span></small></div>
 <!--First row transaction information-->
     <div class="ui three column doubling stackable grid container">
         <div class="row">
-            <div class="column" id="market-info">
+            <div class="column" id="left-info">
                 <h3 class="ui top attached header">
                   Sender
                 </h3>
@@ -15,7 +16,7 @@
                 </div>
             </div>
             
-            <div class="column">
+            <div class="column" id="middle-info">
                 <h3 class="ui top attached header">
                   Receiver
                 </h3>
@@ -24,7 +25,7 @@
                 </div>
             </div>
 
-            <div class="column" id="transactions-info">
+            <div class="column" id="right-info">
                 <h3 class="ui top attached header">
                   Value
                 </h3>
@@ -36,51 +37,51 @@
     </div>
     
     <!--Second row, transaction information table-->
-    <table class="ui celled striped table">
+<table class="ui celled striped table">
   <thead>
     <tr><th colspan="3" class="six wide">
-      Additional info
+      Additional information
     </th>
   </tr></thead>
   <tbody>
     <tr>
       <td class="collapsing">
-        <i class="folder icon"></i> Transaction Hash:
+        <i class="blue qrcode icon"></i> Transaction Hash:
       </td>
       <td>0x35774bca3f245307b249a6ed0f199f003589d1c7dd5e4429d3ec4c98cee153d5</td>
-      
+
     </tr>
     <tr>
       <td>
-        <i class="folder icon"></i> Transaction Status:
+        <i class="blue check icon"></i> Transaction Status:
       </td>
       <td class="positive">Success</td>
-      
     </tr>
+    
     <tr>
       <td>
-        <i class="folder icon"></i> Block Height:
+        <i class="blue square icon"></i> Block Height:
       </td>
       <td>5661749 (5840 block confirmations)</td>
-      
     </tr>
+    
     <tr>
       <td>
-        <i class="file outline icon"></i> Received Time:
+        <i class="blue clock icon"></i> Received Time:
       </td>
       <td>1 day 45 mins ago (May-23-2018 06:56:24 AM +UTC)</td>
-      
     </tr>
+    
     <tr>
       <td>
-        <i class="file outline icon"></i> Block Producer:
+        <i class="blue user icon"></i> Block Producer:
       </td>
       <td>EOS Cafe</td>
-      
     </tr>
+    <!--End of table-->
   </tbody>
 </table>
-    
 
+<!--End of Main div-->
 </div>
 <% include partials/footer %>
