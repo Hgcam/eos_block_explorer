@@ -51,6 +51,12 @@ app.get("/accounts", function(req, res){
     console.log("Accounts page works");
 });
 
+// Render Accounts Page
+app.get("/account-id", function(req, res){
+    res.render("account-id");
+    console.log("Account id page works");
+});
+
 // Port setup - keep at end of doc
 app.listen(process.env.PORT, process.env.IP, function(){
     console.log("Server is listening to you!")
