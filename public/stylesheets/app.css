@@ -27,8 +27,8 @@
     overflow: hidden;
 }
 
-td {
-    max-width: 120px;
+td, th {
+    max-width: 250px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
